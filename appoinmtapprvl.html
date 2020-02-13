@@ -1,0 +1,322 @@
+<html>
+    <head>
+        <style>
+            input[type=text] {
+    width: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=text], select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+input[type=number]
+        {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=email] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+/* Set a style for all buttons */
+button {
+    background-color: deeppink;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    text-transform: uppercase;
+    
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: 20s%;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+            .back{
+background-repeat: no-repeat; 
+width:100%;
+ 
+background-size: cover;
+height: 75%; 
+}
+       h1{
+text-align: center;
+    text-transform: uppercase;
+    color: mediumvioletred;
+}
+            p{
+text-align: center;
+  
+    letter-spacing: 3px;}
+            /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 40%;
+	   
+    }
+}
+   
+        </style>
+    </head>
+    <body background="baloon.jpg"class="back">
+    <h1 align="center">MedLife</h1>
+    <p >
+If you want to be Happy, BE !
+</p>
+        
+        
+ <!-- <script>
+     function check() {
+  if (document.getElementById('pass').value ==
+    document.getElementById('rpass').value) {
+    document.getElementById('message').style.color = 'green';
+    document.getElementById('message').innerHTML = 'Matching';
+  } else {
+    document.getElementById('message').style.color = 'red';
+    document.getElementById('message').innerHTML = 'Not Matching';
+  }
+}
+    </script> 
+    
+  -->
+            <br>
+        <center>
+            
+            <!--<form action="proceed.php" method="post"><button type="submit">View Student's Result</button></form>
+            -->
+                 
+            
+       
+       <!-- <p><button onClick="document.getElementById('id03').style.display='block'">PATIENT REGISTRATION</button></p><br><br>
+        <div id="id03" class="modal">-->
+           <form class="modal-content animate" action='ssignup.php' method='post'>
+<table width="105%" style="width:100%">
+  <!--<th colspan="3"><h2></h2></th>-->
+  <tr>
+    <th width="30%"><div align="left"><strong><u>APPOINMENT APPROVAL</u></strong></div></th>
+  <tr>
+    <td>Registration Date </td>
+    <td colspan="5"><input type="date"  name="rdate" required></td>
+   
+    </label></td>
+  </tr>
+  <tr>
+    <td><label> Name</label></td>
+    <td colspan="7"><input type="text"  name="sname" required pattern="[a-z A-Z]{2,20}"></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td colspan="7"><label></label></td>
+  </tr>
+  <tr>
+    <td>DOB</td>
+    <td colspan="7"><label>
+      <input type="date" name="dob" required max="2000-12-31">
+    </label></td>
+  </tr>
+  
+  
+  <tr>
+    <td><label for="gender">Gender</label></td>
+    <td colspan="7"><input type="radio" name="gender" value="m" checked>
+      Male
+      <input type="radio" name="gender" value="f">
+      &nbsp Female
+      <input type="radio" name="gender" value="o">
+      &nbsp Other</td>
+    <br>
+  </tr>
+  <tr>
+    <td>Reference By </td>
+    <td colspan="7"><input type="text" id="batch" name="batch" required></td>
+  </tr>
+  
+    
+  <tr>
+    <td><label for="pass"></label></td>
+    <td colspan="7">&nbsp;</td>
+    <br>
+  </tr>
+ 
+  <tr>
+    <td><label for="ph">Phone Number</label></td>
+    <td colspan="7"><input type="text" id="pno" name="pno" required pattern="[6789][0-9]{9}"></td>
+    <br>
+  </tr>
+  <tr>
+    <td><label></label></td>
+    <td width="18%">&nbsp;</td>
+  </tr>
+ 
+  <tr>
+    <td>House Name </td>
+    <td colspan="7"><label>
+      <input type="text" name="textfield2">
+    </label></td>
+  </tr>
+  
+  <tr>
+    <td>City</td>
+    <td colspan="7"><input type="text" name="textfield23"></td>
+  </tr>
+  
+  <tr>
+    <td>APPOINMENT DETAILS </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>Doctor</td>
+    <td colspan="6"> <select id="dr" name="drs">
+        <option value="">RAM</option>
+        <option value="">RANI</option>
+      </select></td>
+    <td><label for="course">Department</label></td>
+    <td width="13%"><b>
+      <select id="course" name="course">
+        <option value="">Pharmacy</option>
+        <option value="">Xray</option>
+      </select>
+	  </tr>
+ <tr>
+ <td>Appoinment Date</td>
+ <td><input type="date" name="appdate" >
+ </td>
+ </tr>
+  <br>
+  <tr>
+    <td colspan="6"><button type="submit" value="Submit">Approval</button></td>
+    <td colspan="7"><button type="button" onClick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button></td>
+  </tr>
+</table>
+</b>
+             </div>
+                      </form>
+        
+           </div>
+            
+        
+          </form>
+        </center>
+		<!--<form action="studentview.php" method="post"><center><button type="submit">View Student</button></center></form>-->
+</body>
+</html>
+
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+	>
