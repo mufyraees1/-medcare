@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.medcare"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.medcare.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.medcare.Registration"
+            android:label="@string/title_activity_registration" >
+        </activity>
+        <activity
+            android:name="com.example.medcare.ViewDoctor"
+            android:label="@string/title_activity_view_doctor" >
+        </activity>
+        <activity
+            android:name="com.example.medcare.Add_Booking"
+            android:label="@string/title_activity_add__booking" >
+        </activity>
+        <activity
+            android:name="com.example.medcare.View_testResult"
+            android:label="@string/title_activity_view_test_result" >
+        </activity>
+        <activity
+            android:name="com.example.medcare.ViewPrescription"
+            android:label="@string/title_activity_view_prescription" >
+        </activity>
+        <activity
+            android:name="com.example.medcare.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.example.medcare.Booking"
+            android:label="@string/title_activity_booking" >
+        </activity>
+        <activity
+            android:name="com.example.medcare.V_notification"
+            android:label="@string/title_activity_v_notification" >
+        </activity>
+        <activity
+            android:name="com.example.medcare.V_pat_his"
+            android:label="@string/title_activity_v_pat_his" >
+        </activity>
+        <activity
+            android:name="com.example.medcare.Treatment"
+            android:label="@string/title_activity_treatment" >
+        </activity>
+    </application>
+
+</manifest>
